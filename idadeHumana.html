@@ -17,11 +17,22 @@
     const idade = prompt("Digite a idade do seu cão:");
 
     // Processamento
-    if (cao == "P") { // Porte pequeno 
+    if (cao == "P" || cao == "p") { // Porte pequeno 
        document.write(`A idade humana do seu cão é ${(idade*pequeno)} anos.`);
        document.write("A idade humana do seu cão é ", (idade*pequeno), " anos.");
+        
+    }else if (cao == "M" || cao == "m") {
+       document.write(`A idade humana do seu cão é ${(idade*medio)} anos.`);
+       document.write("A idade humana do seu cão é ", (idade*medio), " anos.");
+    
+    }else if (cao == "G" || cao == "g"){
+       document.write(`A idade humana do seu cão é ${(idade*grande)} anos.`);
+       document.write("A idade humana do seu cão é ", (idade*grande), " anos.");
+        
+    }else {
+         document.write(`Porte inválido.`);
     }
-    // Saída de Dados
+    // Saída de Dados 
     
 
 
